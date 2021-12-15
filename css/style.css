@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: rgba(217, 226, 255, 0.281);
+}
+
 .nav {
     background: linear-gradient(45deg, rgb(31, 31, 31), rgba(31, 31, 31, 0.918));
     padding: 5px;
@@ -28,8 +32,12 @@
     gap: 15px;
 }
 
+.produtos h5 {
+    margin-top: 10px;
+}
+
 .produto {
-    /* background: rgb(240, 240, 240); */
+    background: white;
     width: 200px;
     padding: 10px;
     border-radius: 5px;
@@ -49,6 +57,21 @@
 
 .produto-img img {
     height: 300px;
+}
+
+.btn-comprar {
+    padding: 5px;
+    color: white;
+    background: rgba(0, 0, 0, 0.76);
+    border-radius: 3px;
+    border: none;
+}
+
+.btn-comprar:hover {
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.76);
+    background: white;
+    box-shadow: 0px 0px 5px black;
 }
 
 
