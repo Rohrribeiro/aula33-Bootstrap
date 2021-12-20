@@ -5,216 +5,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="nav">
-        <ul class="nav-list container d-flex">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Loja</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top p-2  box-shadow t">
+        <a href="index.html" class="navbar-brand ">
+            <h1>Agiota Bank</h1>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="simulacao.html">Simulação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="emprestimo.html">Empréstimo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Condições</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-warning ml-md-2" href="inscricao.html">Inscreva-se</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- CARROSEL -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/pexels-sourav-mishra-3660527.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Triumph 675</h5>
-                    <p>2021 0Km - R$49.000</p>
-                </div>
+    <!-- BANNER -->
+    <section class="container-fluid">
+        <div class="row bg-dark text-white">
+            <!-- Texto -->
+            <div class="col-lg-5 p-5 align-self-center text-center">
+                <h1>Realize seu sonhos</h1>
+                <p> Aproveite o Final de ano para pegar dinheiro com o Agiota Reddington.</p>
+                <p>Vários anos de experiência no mercado.</p>
+                <button class="btn btn-warning btn-lg">Pegar Empréstimo</button>
             </div>
-            <div class="carousel-item">
-                <img src="img/pexels-sourav-mishra-3660526.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Triumph 675</h5>
-                    <p>2021 0Km - R$49.000</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/pexels-sourav-mishra-3068663.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>BMW 1200 RR</h5>
-                    <p>2021 0Km - R$85.000</p>
-                </div>
+
+            <!-- CAROUSEl -->
+            <div class=" col-lg-7 p-0 ">
+                <img src="img/Raymond-Red-Reddington.jpg" width="100%" alt="Aiota Do bem">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <!-- PRODUTOS -->
-    <div class="container">
-        <div class="p-3 d-flex justify-content-center">
-            <h2 class="">Mais Vendidas</h2>
         </div>
+    </section>
 
-        <div class="produtos">
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-abhinav-8532371.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
+    <!-- Vantagens -->
+    <section class="py-5 bg-light text-center">
+        <div class="container">
+            <div class="my-5">
+                <span class="h6 d-block">MAIS VANTAGENS</span>
+                <h2>Aproveite as vantagens</h2>
             </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-nick-wehrli-4054069.jpg" alt="">
+
+            <div class="row">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div style="height: 100px;" class="d-flex justify-content-center">
+                            <img src="img/icones/passaporte.svg" alt="Passaporte">
+                        </div>
+                        <h3>Documentos</h3>
+                        <p>Tomamos seus documents para que você não suma</p>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div style="height: 100px;" class="d-flex justify-content-center">
+                            <img src="img/icones/passagens.svg" alt="Passagens">
+                        </div>
+                        <h3>Passagens</h3>
+                        <p> Se não págar, ganha passagem direto pro Céu</p>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div style="height: 100px;" class="d-flex justify-content-center">
+                            <img src="img/icones/translado.svg" alt="Translado">
+                        </div>
+                        <h3>Translado</h3>
+                        <p>Nós mesmo providenciamos o translado</p>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div style="height: 100px;" class="d-flex justify-content-center">
+                            <img src="img/icones/praias.svg" alt="Praias">
+                        </div>
+                        <h3>Praias</h3>
+                        <p>Vai acordar enterrado na areia só com a cabeça pra fora</p>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div style="height: 100px;" class="d-flex justify-content-center">
+                            <img src="img/icones/bagagens.svg" alt="Bagagens">
+                        </div>
+                        <h3>Bagagens</h3>
+                        <p>Não se preocupe, nós damos um jeito</p>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div style="height: 100px;" class="d-flex justify-content-center">
+                            <img src="img/icones/turismo.svg" alt="Turismo">
+                        </div>
+                        <h3>Turismo</h3>
+                        <p>Pelo cativerio junto com nossa equipe especial</p>
+                    </div>
                 </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-sourav-mishra-3068663.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-sourav-mishra-3660526.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-sourav-mishra-3660527.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-sourav-mishra-3068663.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-abhinav-8532371.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-nick-wehrli-4054069.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-sourav-mishra-3068663.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-sourav-mishra-3660526.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-sourav-mishra-3660527.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
-            </div>
-            <div class="produto">
-                <div class="produto-img">
-                    <img src="img/pexels-sourav-mishra-3068663.jpg" alt="">
-                </div>
-                <h5>Triumph 675</h5>
-                <p>Moto de garagem, muito nova, acompanha acessórios pra pista</p>
-                <input class="btn-comprar" type="button" value="Comprar" onclick="btnComprar()">
             </div>
         </div>
-        <hr>
-    </div>
+    </section>
+
+    <!-- Citação -->
+    <section id="home-quote" class="p-md-5">
+        <blockquote class="blockquote text-center text-white p-md-5 p-3">
+            <p class="display-4"><em> "Nada melhor que pgar o juros em dia pra não tomar um café com bolacha</em></p>
+            <footer class="blockquote-footer text-white">Raymond Red Reddington</footer>
+        </blockquote>
+    </section>
 
 
-    <!-- VIDEO -->
-    <div class="container">
-        <div class="p-3 d-flex justify-content-center">
-            <h2 class="">Apresentação da Nova R 1250 GS Premium Triple Black</h2>
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="simulacao.html">Simulação</a></li>
+                        <li><a href="emprestimo.html">Empréstimo</a></li>
+                        <li><a href="condicoes.html">Condições</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">Valores</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">R$ 5.000</a></li>
+                        <li><a href="#">R$ 10.000</a></li>
+                        <li><a href="#">R$ 15.000</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>agiotadobem@cacetesenaopagar.com</li>
+                        <li>11 4002-8922</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-outline-warning btn-sm btn-block mb-2" href="#" style="max-width: 140px">Facebook</a></li>
+                        <li><a class="btn btn-outline-warning btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a></li>
+                        <li><a class="btn btn-outline-warning btn-sm btn-block mb-2" href="#" style="max-width: 140px">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="video p-3 d-flex justify-content-center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OL00zzh32pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="bg-warning text-center py-3">
+            <p class="mb-0">Agiota Bank © 2021. Alguns direitos reservados.</p>
         </div>
-    </div>
-
-    <!-- FORM -->
-    <div class=" formulario">
-        <form class="p-4 container">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">E-mail </label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Lembrar de mim</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="p-3 d-flex justify-content-center">
-        <p>Todos os diretos reservados 2021</p>
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity=" sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin=" anonymous "></script>
+
+    <script src=" js/script.js "></script>
 </body>
 
 </html>

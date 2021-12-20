@@ -6,87 +6,25 @@
 
 body {
     background: rgba(217, 226, 255, 0.281);
+    padding-top: 77.34px;
 }
 
-.nav {
-    background: linear-gradient(45deg, rgb(31, 31, 31), rgba(31, 31, 31, 0.918));
-    padding: 5px;
+.colorPrimary {
+    background: #004733;
 }
 
-.nav-list {
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
+.bgColorGrey {
+    background: #F3F4F6;
 }
 
-
-/* PRODUTOS */
-
-.produtos {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px;
-    gap: 15px;
+.colorGrey {
+    color: #F3F4F6;
 }
 
-.produtos h5 {
-    margin-top: 10px;
+.box-shadow {
+    box-shadow: 2px 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.produto {
-    background: white;
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 2px 0px rgb(0, 0, 0, 0.5);
-}
-
-.produto:hover {
-    box-shadow: 0px 0px 5px 0px rgb(27, 126, 255);
-}
-
-.produto-img {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 3px;
-}
-
-.produto-img img {
-    height: 300px;
-}
-
-.btn-comprar {
-    padding: 5px;
-    color: white;
-    background: rgba(0, 0, 0, 0.76);
-    border-radius: 3px;
-    border: none;
-}
-
-.btn-comprar:hover {
-    padding: 5px;
-    color: rgba(0, 0, 0, 0.76);
-    background: white;
-    box-shadow: 0px 0px 5px black;
-}
-
-
-/* FORMULARIO */
-
-.formulario {
-    background: linear-gradient(45deg, rgb(31, 31, 31), rgba(31, 31, 31, 0.918));
-    color: white;
-}
-
-.formulario form {
-    max-width: 1080px;
-}
-
-.formulario input {
-    background: linear-gradient(45deg, rgb(31, 31, 31), rgba(31, 31, 31, 0.918));
-    color: white;
+#home-quote {
+    background: url("../img/bg-quote.jpg");
 }
